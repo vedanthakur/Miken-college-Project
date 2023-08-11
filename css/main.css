@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    min-height: 90dvh;
+    margin: 10px 20px;
+}
+
+.center {
+    text-align: center;
+}

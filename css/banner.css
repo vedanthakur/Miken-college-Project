@@ -1,0 +1,15 @@
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}

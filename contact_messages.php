@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/card.css">
-    <title>Blogs</title>
+    <title>Contact Messages</title>
 </head>
 <body>
     <?php include 'nav.php'; ?>
@@ -18,7 +18,7 @@
 
                 require_once "inc/dbconfig.php";
 
-                $sql = "SELECT * FROM blogs";
+                $sql = "SELECT * FROM contact";
                 $result = mysqli_query($conn, $sql);
 
                 // Check if there are any results
@@ -26,11 +26,10 @@
                 // Loop through the results and display them
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<div class="card">';
-                    echo "<h2>" . $row["title"] . "</h2>";
-                    if ($row["image"]) {
-                        echo '<span><img width="100px" src="data:image/jpeg;base64,' . base64_encode($row["image"]) . '" alt="Image"></span>';
-                    }
-                    echo "<p>" . $row["content"] . "</p>";
+                    echo "<h2>" . $row["name"] . "</h2>";
+                    echo "<p>" . $row["email"] . "</p>";
+                    echo "<p>" . $row["mobile"] . "</p>";
+                    echo "<p>" . $row["message"] . "</p>";
                     echo "</div>";
                 }
                 } else {

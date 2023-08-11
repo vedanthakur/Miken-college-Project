@@ -10,5 +10,5 @@
         die("DB connection failed due to " . mysql_connect_error());
     }
 
-    echo "DB connected sucessfully!!";
+    // echo "DB connected sucessfully!!";
 ?>

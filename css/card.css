@@ -1,0 +1,48 @@
+#center_card {
+    /* margin: 0 auto; */
+}
+/* CSS styles for the cards */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Two columns in the grid */
+    gap: 10px;
+    /* Gap between grid items */
+    padding: 20px;
+    /* Center the grid items horizontally */
+}
+
+/* CSS styles for the cards */
+a:link {
+    text-decoration: none;
+}
+
+.card {
+    border: 1px solid #ccc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 50%;
+    min-width: fit-content;
+    margin: 10px;
+    /* Adjust the card width to fit the grid columns */
+    /* cursor: pointer; */
+    /* Show pointer cursor on hover to indicate clickability */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
