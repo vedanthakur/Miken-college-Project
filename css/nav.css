@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    margin: 0 10px;
+    color: aliceblue;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 32, 13);
+  }
+  
