@@ -11,15 +11,18 @@
 </head>
 <body>
     <?php include 'nav.php'; ?>
-    <h1>Gallery</h1>
+    <div class="center">
+  <h1>Gallery</h1>
+    </div>
+
     <main>
         <div class="gallery">
-        <img src="https://random.imagecdn.app/500/500" alt="Image 1">
-        <img src="https://random.imagecdn.app/500/501" alt="Image 2">
-        <img src="https://random.imagecdn.app/501/500" alt="Image 3">
-        <img src="https://random.imagecdn.app/499/500" alt="Image 4">
-        <img src="https://random.imagecdn.app/500/499" alt="Image 5">
-        <img src="https://random.imagecdn.app/499/501" alt="Image 6">
+            <img src="https://random.imagecdn.app/500/500" alt="Image 1">
+            <img src="https://random.imagecdn.app/500/501" alt="Image 2">
+            <img src="https://random.imagecdn.app/501/500" alt="Image 3">
+            <img src="https://random.imagecdn.app/499/500" alt="Image 4">
+            <img src="https://random.imagecdn.app/500/499" alt="Image 5">
+            <img src="https://random.imagecdn.app/499/501" alt="Image 6">
         </div>
         <!-- The modal (lightbox) -->
         <div class="modal">

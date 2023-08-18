@@ -9,7 +9,13 @@
     <title>Add Blog</title>
 </head>
 <body>
-    <?php include 'nav.php'; ?>
+    <?php include 'nav.php'; 
+        if (!isset($_SESSION["email"])) {
+            header("location: login.php");
+        }
+    
+    ?>
+
     <main>
         <h1>Add Blog</h1>
         <form action="inc/add_blog.inc.php" method="post" enctype="multipart/form-data">
@@ -17,7 +23,7 @@
             <input type="text" name="title" id="title" placeholder="Enter title" required><br><br>
 
             <label for="image">Image</label>
-            <input type="file" name="image" id="image">
+            <input type="file" name="image" id="image"><br><br>
 
             <label for="content">Content</label><br>
             <textarea name="content" id="content" cols="30" rows="10" placeholder="Enter your content" required></textarea><br><br>

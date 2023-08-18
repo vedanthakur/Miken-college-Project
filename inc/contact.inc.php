@@ -1,6 +1,7 @@
 <?php
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["submit"]))
+ {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $mobile = $_POST["mobile"];
@@ -15,9 +16,10 @@ if (isset($_POST["submit"])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-        die("Error: couldn't inser t the data");
+        die("Error: couldn't insert the data");
+    } else {
+        echo "Data inserted sucessfully !! ";
     }
-    echo "Data inserted sucessfully !! ";
 
 } else {
     header("location: ../contact.php");

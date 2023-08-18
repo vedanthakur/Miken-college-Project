@@ -1,16 +1,17 @@
 /* Footer styles */
 footer {
-    margin-top: 30px;
-    background-color: #333;
-    color: #fff;
+    margin-top: 110px;
+    
+    background-color: rgb(5, 55, 55);
+    color: #e73535;
     text-align: center;
-    padding: 20px;
-    border-top-left-radius: 30px;
+    padding: 50;
+    border-top-left-radius: 50px;
     border-top-right-radius: 30px;
   }
 
   /* Links in the footer */
   footer a {
     color: #fff;
-    text-decoration: none;
+    text-decoration:none;
   }

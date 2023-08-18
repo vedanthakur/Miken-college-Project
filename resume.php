@@ -23,7 +23,7 @@
             </tr>
             <tr>
                 <td>Email:</td>
-                <td>miken@gmail.com</td>
+                <td>mikenthakur7@gmail.com</td>
             </tr>
             <tr>
                 <th colspan="2">Education</th>

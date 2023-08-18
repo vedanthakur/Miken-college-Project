@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,19 @@
     <link rel="stylesheet" href="css/card.css">
     <title>Contact Messages</title>
 </head>
+
 <body>
-    <?php include 'nav.php'; ?>
+    <?php 
+        include 'nav.php'; 
+        if (!isset($_SESSION["email"])) {
+            header("location: login.php");
+        }
+    
+    ?>
     <main>
-    <div id="center_card">
-        <div id="cards">
-            <?php
+        <div id="center_card">
+            <div id="cards">
+                <?php
 
                 require_once "inc/dbconfig.php";
 
@@ -33,14 +41,15 @@
                     echo "</div>";
                 }
                 } else {
-                echo "No results found";
+                    echo "No results found";
                 }
 
                 // Close the connection
                 mysqli_close($conn);
 
             ?>
+            </div>
         </div>
-    </div>
 </body>
+
 </html>

@@ -23,10 +23,14 @@ if (isset($_POST["submit"])) {
     
     mysqli_stmt_bind_param($statement, "sss", $title,$content,$image);
     
-    mysqli_stmt_execute($statement);
+    $rowsAffected = mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
 
-    echo "Data inserted sucessfully !! ";
+    if ($rowsAffected > 0) {
+        echo "Data inserted sucessfully !! ";
+    } else {
+        echo "Error: Data not inserted";
+    }
 
 } else {
     header("location: ../contact.php");

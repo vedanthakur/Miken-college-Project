@@ -5,14 +5,17 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    color: #bb0a0a;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
-    border: 1px solid #ccc;
+    border: 1px solid #c51818;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 /* The modal (lightbox) */
@@ -24,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(228, 9, 9, 0.7);
 }
 
 .modal-content {
@@ -35,12 +38,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid #fff;
+    border: 2px solid #bb0a0a;
     border-radius: 5px;
+    text-align: center;
 }
 
 .modal-content img {
     width: 100%;
     height: auto;
     display: block;
+    text-align: center;
+
 }

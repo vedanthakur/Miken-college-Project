@@ -24,17 +24,17 @@
                 // Check if there are any results
                 if (mysqli_num_rows($result) > 0) {
                 // Loop through the results and display them
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<div class="card">';
-                    echo "<h2>" . $row["title"] . "</h2>";
-                    if ($row["image"]) {
-                        echo '<span><img width="100px" src="data:image/jpeg;base64,' . base64_encode($row["image"]) . '" alt="Image"></span>';
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo '<div class="card">';
+                        echo "<h2>" . $row["title"] . "</h2>";
+                        if ($row["image"]) {
+                            echo '<span><img width="100px" src="data:image/jpeg;base64,' . base64_encode($row["image"]) . '" alt="Image"></span>';
+                        }
+                        echo "<p>" . $row["content"] . "</p>";
+                        echo "</div>";
                     }
-                    echo "<p>" . $row["content"] . "</p>";
-                    echo "</div>";
-                }
                 } else {
-                echo "No results found";
+                    echo "No results found";
                 }
 
                 // Close the connection
