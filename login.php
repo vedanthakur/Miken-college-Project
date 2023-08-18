@@ -10,7 +10,13 @@
     <title>Log in</title>
 </head>
 <body>
-    <?php include 'nav.php'; ?>
+    <?php 
+        include 'nav.php'; 
+        if (isset($_SESSION["email"])) {
+            header("location: index.php");
+        }
+    
+    ?>
     <main>
       <form action="inc/login.inc.php" method="post">
         <label for="email">Email Address</label>
