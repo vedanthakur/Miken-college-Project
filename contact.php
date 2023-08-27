@@ -23,8 +23,6 @@
         padding-left:  30px;
         padding-right: 15px;
 
-
-
     }
 
 
